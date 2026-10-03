@@ -129,6 +129,18 @@ export default function Navbar() {
             {link.label}
           </NavLink>
         ))}
+        {isGoddessOrDev && (
+          <NavLink
+            to="/dashboard"
+            className={({ isActive }) =>
+              `navbar__mobile-link ${isActive ? 'navbar__mobile-link--active' : ''}`
+            }
+            onClick={() => setMobileOpen(false)}
+            style={{ color: 'var(--color-gold)', fontWeight: 'bold' }}
+          >
+            Dashboard
+          </NavLink>
+        )}
         <button className="navbar__cta" style={{ marginTop: '1rem' }} onClick={handleAuthAction}>
           {user ? 'Log Out' : 'Authenticate'}
         </button>
