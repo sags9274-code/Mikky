@@ -28,7 +28,7 @@
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
   backdrop-filter: blur(var(--blur-md));
-  box-shadow: 0 8px 32px rgba(236, 72, 153, 0.2);
+  box-shadow: 0 8px 32px rgba(114, 22, 43, 0.2);
   overflow: visible;
   width: 100%;
   position: static;
@@ -38,13 +38,13 @@
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: rgba(236, 72, 153, 0.4);
+  background: rgba(114, 22, 43, 0.4);
   border: 2px solid var(--color-gold);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 4rem;
-  box-shadow: 0 0 20px rgba(212, 168, 67, 0.2);
+  box-shadow: 0 0 20px rgba(201, 168, 76, 0.2);
   flex-shrink: 0;
 }
 
@@ -102,7 +102,7 @@
 
 .profile-username-input:focus {
   outline: none;
-  box-shadow: 0 0 10px rgba(212, 168, 67, 0.2);
+  box-shadow: 0 0 10px rgba(201, 168, 76, 0.2);
 }
 
 .profile-btn-save {
@@ -148,7 +148,7 @@
 }
 
 .profile-status--info {
-  background: rgba(236, 72, 153, 0.1);
+  background: rgba(114, 22, 43, 0.1);
   color: #ddd;
 }
 
@@ -190,7 +190,7 @@
 }
 
 .role-badge--goddess {
-  background: rgba(212, 168, 67, 0.2);
+  background: rgba(201, 168, 76, 0.2);
   color: var(--color-gold);
   border: 1px solid var(--color-gold);
 }
@@ -202,7 +202,7 @@
 }
 
 .role-badge--sub {
-  background: rgba(236, 72, 153, 0.1);
+  background: rgba(114, 22, 43, 0.1);
   color: #ccc;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -219,7 +219,7 @@
 .profile-empty-state {
   text-align: center;
   padding: 40px;
-  background: rgba(236, 72, 153, 0.2);
+  background: rgba(114, 22, 43, 0.2);
   border: 1px dashed var(--color-border);
   border-radius: var(--radius-md);
   color: var(--color-text-secondary);
@@ -269,7 +269,7 @@
 }
 
 .rarity--legendary {
-  box-shadow: 0 0 15px rgba(212, 168, 67, 0.15);
+  box-shadow: 0 0 15px rgba(201, 168, 76, 0.15);
 }
 .rarity--legendary .profile-badge-name {
   color: var(--color-gold);

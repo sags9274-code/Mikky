@@ -8,29 +8,29 @@
 }
 
 :root {
-  /* Color Palette - Dark Gold/Crimson Theme */
-  --color-bg-primary: #0a0805;
-  --color-bg-secondary: #1a1510;
-  --color-bg-card: rgba(20, 16, 10, 0.85);
-  --color-bg-card-border: rgba(212, 168, 67, 0.2);
-  --color-gold: #d4a843;
+  /* Color Palette - Cathedral Wine & Gold */
+  --color-bg-primary: #0a0812;
+  --color-bg-secondary: #130f24;
+  --color-bg-card: rgba(22, 17, 40, 0.85);
+  --color-bg-card-border: rgba(201, 168, 76, 0.2);
+  --color-gold: #c9a84c;
   --color-gold-hover: #e8c25a;
   --color-gold-dark: #b8922f;
-  --color-gold-muted: rgba(212, 168, 67, 0.15);
-  --color-text-primary: #f5f0e8;
-  --color-text-secondary: #c9bfa8;
-  --color-text-muted: #8a7e6d;
-  --color-border: rgba(212, 168, 67, 0.2);
-  --color-border-hover: rgba(212, 168, 67, 0.4);
-  --color-success: #10b981;
-  --color-accent: #990000;
-  --color-accent-hover: #cc0000;
-  --color-overlay: rgba(10, 8, 5, 0.8);
+  --color-gold-muted: rgba(201, 168, 76, 0.15);
+  --color-text-primary: #f2e9d8;
+  --color-text-secondary: #c4b69c;
+  --color-text-muted: #857864;
+  --color-border: rgba(201, 168, 76, 0.2);
+  --color-border-hover: rgba(201, 168, 76, 0.4);
+  --color-success: #2e8b57;
+  --color-accent: #72162b;
+  --color-accent-hover: #a1233f;
+  --color-overlay: rgba(10, 8, 18, 0.88);
 
   /* Typography */
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-heading: 'Outfit', 'Inter', sans-serif;
+  --font-display: 'Cinzel Decorative', serif;
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Crimson Text', serif;
 
   /* Spacing */
   --space-xs: 0.25rem;
@@ -56,7 +56,7 @@
   --duration-slow: 500ms;
 
   /* Shadows */
-  --shadow-glow: 0 0 30px rgba(212, 168, 67, 0.15);
+  --shadow-glow: 0 0 30px rgba(201, 168, 76, 0.15);
   --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
   --shadow-elevated: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
@@ -110,19 +110,19 @@ ul, ol {
   background: var(--color-bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(212, 168, 67, 0.3);
+  background: rgba(201, 168, 76, 0.3);
   border-radius: var(--radius-full);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(212, 168, 67, 0.5);
+  background: rgba(201, 168, 76, 0.5);
 }
 
 /* ===== GLOBAL ANIMATIONS ===== */
 @keyframes heartbeat-pulse {
-  0% { transform: scale(1); box-shadow: 0 0 10px rgba(212, 168, 67, 0.2); }
-  15% { transform: scale(1.03); box-shadow: 0 0 25px rgba(212, 168, 67, 0.5); }
-  30% { transform: scale(1); box-shadow: 0 0 10px rgba(212, 168, 67, 0.2); }
-  100% { transform: scale(1); box-shadow: 0 0 10px rgba(212, 168, 67, 0.2); }
+  0% { transform: scale(1); box-shadow: 0 0 10px rgba(201, 168, 76, 0.2); }
+  15% { transform: scale(1.03); box-shadow: 0 0 25px rgba(201, 168, 76, 0.5); }
+  30% { transform: scale(1); box-shadow: 0 0 10px rgba(201, 168, 76, 0.2); }
+  100% { transform: scale(1); box-shadow: 0 0 10px rgba(201, 168, 76, 0.2); }
 }
 
 @keyframes shimmer-sweep {
@@ -137,8 +137,8 @@ ul, ol {
 }
 
 @keyframes hypnotic-glow {
-  0%, 100% { filter: drop-shadow(0 0 8px rgba(212, 168, 67, 0.3)); }
-  50% { filter: drop-shadow(0 0 25px rgba(212, 168, 67, 0.7)); }
+  0%, 100% { filter: drop-shadow(0 0 8px rgba(201, 168, 76, 0.3)); }
+  50% { filter: drop-shadow(0 0 25px rgba(201, 168, 76, 0.7)); }
 }
 
 @keyframes float-up-fade {
@@ -180,8 +180,8 @@ ul, ol {
 }
 
 @keyframes borderGlow {
-  0%, 100% { box-shadow: 0 0 5px rgba(212, 168, 67, 0.2), 0 0 15px rgba(212, 168, 67, 0.1); }
-  50% { box-shadow: 0 0 20px rgba(212, 168, 67, 0.4), 0 0 40px rgba(212, 168, 67, 0.2); }
+  0%, 100% { box-shadow: 0 0 5px rgba(201, 168, 76, 0.2), 0 0 15px rgba(201, 168, 76, 0.1); }
+  50% { box-shadow: 0 0 20px rgba(201, 168, 76, 0.4), 0 0 40px rgba(201, 168, 76, 0.2); }
 }
 
 @keyframes ripple {
@@ -245,6 +245,6 @@ ul, ol {
 }
 
 @keyframes glowPulse {
-  0%, 100% { box-shadow: 0 0 5px rgba(212, 168, 67, 0.3); }
-  50% { box-shadow: 0 0 25px rgba(212, 168, 67, 0.6), 0 0 50px rgba(212, 168, 67, 0.3); }
+  0%, 100% { box-shadow: 0 0 5px rgba(201, 168, 76, 0.3); }
+  50% { box-shadow: 0 0 25px rgba(201, 168, 76, 0.6), 0 0 50px rgba(201, 168, 76, 0.3); }
 }
